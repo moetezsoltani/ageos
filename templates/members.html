@@ -1,0 +1,160 @@
+<!-- members/templates/members/members.html -->
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section id="members" class="py-5">
+    <div class="container">
+        <div class="section-heading text-center mb-5">
+            <h2>Members</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-white">
+                    <img src="{% static 'images/portfolio/p1.jpg' %}" class="card-img" alt="Nesrine CHEHATA">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                        <h5 class="card-title">Nesrine CHEHATA</h5>
+                        <p class="card-text">President</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/AGEOS.Tunisie/" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/company/ageos-tunisia/" class="text-white"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-dark text-white mt-4">
+                    <img src="{% static 'images/portfolio/p2.jpg' %}" class="card-img" alt="Omar GAAFAR">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                        <h5 class="card-title">Omar GAAFAR</h5>
+                        <p class="card-text">Vice-president</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/AGEOS.Tunisie/" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/company/ageos-tunisia/" class="text-white"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-white">
+                    <img src="{% static 'images/portfolio/p3.jpg' %}" class="card-img" alt="Hedia Chakroun">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                        <h5 class="card-title">Hedia Chakroun</h5>
+                        <p class="card-text">General Secretary</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/AGEOS.Tunisie/" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/company/ageos-tunisia/" class="text-white"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-white">
+                    <img src="{% static 'images/portfolio/p4.jpg' %}" class="card-img" alt="Mohamed Rajhi">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                        <h5 class="card-title">Mohamed Rajhi</h5>
+                        <p class="card-text">Treasurer and trainings coordinator</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/AGEOS.Tunisie/" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/company/ageos-tunisia/" class="text-white"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-dark text-white mt-4">
+                    <img src="{% static 'images/portfolio/p5.jpg' %}" class="card-img" alt="Mohamed Chouchane">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                        <h5 class="card-title">Mohamed Chouchane</h5>
+                        <p class="card-text">Communication and public relations</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/AGEOS.Tunisie/" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/company/ageos-tunisia/" class="text-white"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="contact py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="mb-4">Contact Us</h3>
+                <p class="mb-2"><strong>Phone:</strong> (216) 20 444 171</p>
+                <p class="mb-2"><strong>Email:</strong> info@ageos.org</p>
+                <p class="mb-2"><strong>Website:</strong> <a href="https://www.ageos.org" class="text-primary">www.ageos.org</a></p>
+                <p class="mb-0"><strong>Address:</strong> Tunis, 5, impasse 1, rue Ahmed Ouertani, Menzah9, 1013 Tunis, TUNISIE</p>
+            </div>
+            <div class="col-md-6">
+                <h3 class="mb-4">Our Location</h3>
+                <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 400px;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387.55937355005906!2d10.135855089456303!3d36.84060577756427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd34d9cb7ebd77%3A0xc731b50a1d99d184!2sAGEOS%20Association%20G%C3%A9omatique!5e0!3m2!1sen!2stn!4v1678406120644!5m2!1sen!2stn&q=36.840366,10.136107" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+        <p>&copy; <a href="https://www.ageos.org/" class="text-white">Association AGEOS Tunisie</a></p>
+    </div>
+</footer>
+{% endblock %}
+
+{% block styles %}
+<style>
+    .card {
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .card-img {
+        height: 100%;
+        object-fit: cover;
+    }
+    .card-img-overlay {
+        background: rgba(0, 0, 0, 0.5);
+        padding: 1rem;
+    }
+    .social-icons {
+        margin-top: 10px;
+    }
+    .social-icons a {
+        color: #fff;
+        font-size: 1.2rem;
+    }
+    .social-icons a:hover {
+        color: #ccc;
+    }
+    h2, h3 {
+        color: #333;
+    }
+    p, li {
+        color: #555;
+    }
+    .list-unstyled li {
+        margin-bottom: 10px;
+    }
+    .text-primary {
+        color: #007bff !important;
+    }
+    .contact {
+        background-color: #f8f9fa;
+        padding: 40px 0;
+    }
+    .contact h3 {
+        color: #333;
+    }
+    .contact p {
+        color: #555;
+        margin-bottom: 10px;
+    }
+    footer {
+        background-color: #343a40;
+    }
+    footer a {
+        color: #ffffff;
+    }
+</style>
+{% endblock %}

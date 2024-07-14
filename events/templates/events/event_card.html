@@ -1,0 +1,10 @@
+
+<div class="card rgb">
+    <div class="card-image" style="background: linear-gradient(#fff0 0%, #fff0 70%, #1d1d1d 100%), url('{{ event.image.url }}'); background-size: cover;"></div>
+    <div class="card-text">
+        <span class="date">{{ event.title }} <br> {{ event.date }}</span>
+        
+        <p>{{ event.description|truncatewords:20 }}</p>
+        <a href="{% url 'event_detail' event.id %}" class="btn btn-primary">Read More</a>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{{ formation.title }}</h1>
+<p>{{ formation.date }}</p>
+<p>{{ formation.content }}</p>
+{% if formation.image %}
+<img src="{{ formation.image.url }}" alt="{{ formation.title }}" style="max-width: 500px;">
+{% endif %}
+<p>{{ formation.description }}</p>
+{% endblock %}

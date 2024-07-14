@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>{{ publication.title }}</h1>
+  <p>Published date: {{ publication.published_date }}</p>
+  <p>Author: {{ publication.author }}</p>
+  <p>{{ publication.content }}</p>
+  {% if publication.image %}
+    <img src="{{ publication.image.url }}" alt="{{ publication.title }}" style="max-width: 500px;">
+  {% endif %}
+  <a href="{% url 'publication_delete' publication.id %}">Delete this publication</a>
+{% endblock %}

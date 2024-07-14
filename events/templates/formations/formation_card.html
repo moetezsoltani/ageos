@@ -1,0 +1,14 @@
+<div class="card rgb">
+    {% if formation.image %}
+        <div class="card-image" style="background: linear-gradient(#fff0 0%, #fff0 70%, #1d1d1d 100%), url('{{ formation.image.url }}'); background-size: cover;"></div>
+    {% else %}
+        <div class="card-image" style="background: linear-gradient(#fff0 0%, #fff0 70%, #1d1d1d 100%); background-size: cover;"></div>
+    {% endif %}
+    <div class="card-text">
+        <span class="date">{{ formation.title }} <br> {{ formation.published_date }}</span>
+        
+        <p>{{ formation.description|truncatewords:20 }}</p>
+        <a href="{% url 'formation_detail' formation.id %}" class="btn btn-primary">Read More</a>
+    </div>
+</div>
+

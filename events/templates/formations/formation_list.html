@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="flexcard">
+    {% for formation in formations %}
+        {% include 'formations/formation_card.html' %}
+    {% endfor %}
+</div>
+{% endblock %}

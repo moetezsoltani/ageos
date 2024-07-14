@@ -1,0 +1,10 @@
+
+<div class="card rgb">
+    <div class="card-image" style="background: linear-gradient(#fff0 0%, #fff0 70%, #1d1d1d 100%), url('{{ publication.image.url }}'); background-size: cover;"></div>
+    <div class="card-text">
+        <span class="date">{{ publication.title }} <br> {{ publication.published_date }}</span>
+       
+        <p>{{ publication.content|truncatewords:20 }}</p>
+        <a href="{% url 'publication_detail' publication.id %}" class="btn btn-primary">Read More</a>
+    </div>
+</div>

@@ -1,0 +1,105 @@
+<!-- mission/templates/mission/mission.html -->
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <img src="{% static 'images/profile_image.jpg' %}" alt="AGEOS Logo" class="img-fluid rounded">
+        </div>
+        <div class="col-md-8">
+            <h2 class="mb-4">À propos AGEOS Tunisie</h2>
+            <p>AGEOS : African Association for Geospatial Development, publication au JORT le 03 Novembre 2016.</p>
+            <p>AGEOS regroupe des acteurs actifs du domaine du Géospatial: Universitaires, étudiants et professionnels des secteurs privés et publics.</p>
+            <p>Notre Objectif commun est de: promouvoir l'information géographique et les technologies géospatiales.</p>
+            <h3 class="mt-4">Nos missions:</h3>
+            <ul class="list-unstyled">
+                <li><i class="fas fa-check-circle text-primary"></i> Sensibiliser à l'apport de l'information spatiale en tant que vecteur de développement.</li>
+                <li><i class="fas fa-check-circle text-primary"></i> Renforcer les liens entre les acteurs académiques, publics et privés du secteur géospatial.</li>
+                <li><i class="fas fa-check-circle text-primary"></i> Appuyer les acteurs publics du domaine géospatial.</li>
+                <li><i class="fas fa-check-circle text-primary"></i> Mener une veille sur le marché géospatial en Tunisie.</li>
+                <li><i class="fas fa-check-circle text-primary"></i> Participer à l’évolution de la législation nationale régissant le secteur géospatial.</li>
+                <li><i class="fas fa-check-circle text-primary"></i> Participer à la promotion du secteur géospatial à l’échelle de l’Afrique.</li>
+            </ul>
+            <h3 class="mt-4">La composition du comité directeur:</h3>
+            <ul class="list-unstyled">
+                <li><i class="fas fa-user text-primary"></i> Nesrine Chehata : Présidente</li>
+                <li><i class="fas fa-user text-primary"></i> Omar Gaafar : Vice-président</li>
+                <li><i class="fas fa-user text-primary"></i> Hedia Chakroun : Secrétaire générale</li>
+                <li><i class="fas fa-user text-primary"></i> Mohamed Rajhi : Trésorier</li>
+                <li><i class="fas fa-user text-primary"></i> Mohamed Chouchane : Responsable communication et relations publiques</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Section -->
+<section id="contact" class="contact py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="mb-4">Contact Us</h3>
+                <p class="mb-2"><strong>Phone:</strong> (216) 20 444 171</p>
+                <p class="mb-2"><strong>Email:</strong> info@ageos.org</p>
+                <p class="mb-2"><strong>Website:</strong> <a href="https://www.ageos.org" class="text-primary">www.ageos.org</a></p>
+                <p class="mb-0"><strong>Address:</strong> Tunis, 5, impasse 1, rue Ahmed Ouertani, Menzah9, 1013 Tunis, TUNISIE</p>
+            </div>
+            <div class="col-md-6">
+                <h3 class="mb-4">Our Location</h3>
+                <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 400px;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387.55937355005906!2d10.135855089456303!3d36.84060577756427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd34d9cb7ebd77%3A0xc731b50a1d99d184!2sAGEOS%20Association%20G%C3%A9omatique!5e0!3m2!1sen!2stn!4v1678406120644!5m2!1sen!2stn&q=36.840366,10.136107" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+        <p>&copy; <a href="https://www.ageos.org/" class="text-white">Association AGEOS Tunisie</a></p>
+    </div>
+</footer>
+{% endblock %}
+
+{% block styles %}
+<style>
+    .container {
+        background-color: #f8f9fa;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    h2, h3 {
+        color: #333;
+    }
+    p, li {
+        color: #555;
+    }
+    .list-unstyled li {
+        margin-bottom: 10px;
+    }
+    .text-primary {
+        color: #007bff !important;
+    }
+    .contact {
+        background-color: #f8f9fa;
+        padding: 40px 0;
+    }
+    .contact h3 {
+        color: #333;
+    }
+    .contact p {
+        color: #555;
+        margin-bottom: 10px;
+    }
+    footer {
+        background-color: #343a40;
+    }
+    footer a {
+        color: #ffffff;
+    }
+</style>
+{% endblock %}
